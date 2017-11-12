@@ -6,8 +6,9 @@
     <title>THAPAKORN604 : WELCOME TO MY SITE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bulma-0.6.1/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="bulma-0.6.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bulma-0.6.1/css/bulma.css.map">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="scripts/jquery-3.2.1.js"></script>
 </head>
 <script>
@@ -15,84 +16,229 @@
         $('#menu').toggleClass('is-active');
         $('#nav-collapse').toggleClass('is-active');
     }
+    /* START SCROLL TO SECTION */
+    $('.scrollTo').click(function () {
+        var getElem = $(this).attr('href');
+        var targetDistance = 20;
+        if ($(getElem).length) {
+            var getOffset = $(getElem).offset().top;
+            $('html,body').animate({
+                scrollTop: getOffset - targetDistance
+            }, 1000);
+        }
+        return false;
+    });
+    function doScroll(id) {
+
+        var getOffset = $(id).offset().top;
+        var targetDistance = 20;
+        $('html,body').animate({
+            scrollTop: getOffset - targetDistance
+        }, 1000);
+    }
+    /* END SCROLL TO SECTION */
+    /* START GO TOP BUTTON */
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.scrolltop:hidden').stop(true, true).fadeIn();
+        } else {
+            $('.scrolltop').stop(true, true).fadeOut();
+        }
+    });
+    $(function () { $(".scroll").click(function () { $("html,body").animate({ scrollTop: $(".hero").offset().top }, "1000"); return false }) })
+    /* END GO TOP BUTTON */
 </script>
 <style>
     .img-circle {
         border-radius: 50%;
     }
+
+    .has-bg-img {
+        background: url('img/header.jpg')center center;
+        background-size: cover;
+        opacity: 3.0;
+    }
+
+    #header {
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    }
+
+    a:hover {
+        color: #ff3300;
+    }
+
+    .scrolltop {
+        display: none;
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+    }
+
+    .scroll {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background: #b2b2b2;
+        background: rgba(178, 178, 178, 0.7);
+        padding: 20px;
+        text-align: center;
+        margin: 0 0 0 0;
+        cursor: pointer;
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .scroll:hover {
+        background: rgba(178, 178, 178, 1.0);
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .scroll:hover .fa {
+        padding-top: -10px;
+    }
+
+    .scroll .fa {
+        font-size: 30px;
+        margin-top: -5px;
+        margin-left: 1px;
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
 </style>
 
 <body>
     <!-- START NAV BAR -->
-    <nav class="navbar is-dark">
-        <div class="navbar-brand">
-            <a class="navbar-item has-text-weight-bold" href="#">
-                THAPAKORN
-            </a>
-            <div class="navbar-burger burger" id="nav-collapse" data-target="menu" onclick="showMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div id="menu" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#menu">
-                    <span class="icon">
-                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
-                    </span>
-                    About me
-                </a>
-                <a class="navbar-item" href="#menu">
-                    <span class="icon">
-                        <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-                    </span>
-                    Timeline
-                </a>
-                <a class="navbar-item" href="#menu">
-                    <span class="icon">
-                        <i class="fa fa-code-fork" aria-hidden="true"></i>
-                    </span>
-                    Work
-                </a>
-
-                <a class="navbar-item" href="#menu">
-                    <span class="icon">
-                        <i class="fa fa-trophy" aria-hidden="true"></i>
-                    </span>
-                    Achievement
-                </a>
-            </div>
-
-            <div class="navbar-end">
-                <hr>
-                <div class="navbar-item">
-                    <p class="control">
-                        <a class="button is-primary" href="https://github.com/jgthms/bulma/archive/0.5.1.zip">
-                            <span class="icon">
-                                <i class="fa fa-download"></i>
-                            </span>
-                            <span>Download CV</span>
+    <section class="hero is-large is-dark has-bg-img">
+        <div class="hero-head">
+            <nav class="navbar is-primary">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item has-text-weight-bold" href="#">
+                            THAPAKORN604
                         </a>
-                    </p>
+                        <div class="navbar-burger burger" id="nav-collapse" data-target="menu" onclick="showMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div id="menu" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item scrollTo" href="#aboutme">
+                                <span class="icon">
+                                    <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                </span>
+                                About me
+                            </a>
+                            <a class="navbar-item scrollTo" href="#menu">
+                                <span class="icon">
+                                    <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                                </span>
+                                Timeline
+                            </a>
+                            <a class="navbar-item scrollTo" href="#menu">
+                                <span class="icon">
+                                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                                </span>
+                                Work
+                            </a>
+
+                            <a class="navbar-item scrollTo" href="#menu">
+                                <span class="icon">
+                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                </span>
+                                Achievement
+                            </a>
+                        </div>
+
+                        <div class="navbar-end">
+                            <hr>
+                            <div class="navbar-item">
+                                <p class="control">
+                                    <a class="button is-dark is-inverted is-outlined" href="">
+                                        <span class="icon">
+                                            <i class="fa fa-download"></i>
+                                        </span>
+                                        <span>Download CV</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title has-text-centered is-size-1-desktop" id="header">
+                    <span class="icon">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </span>
+                    THAPAKORN TUWAEMUESA
+                </h1>
+                <div class="content has-text-centered">
+                    <button class="button is-dark is-large is-inverted is-outlined is-hidden-mobile" onclick="doScroll('#aboutme')">
+                        <span class="icon">
+                            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
     <!-- END NAV BAR -->
-    <!-- START CONTAINER -->
-    <div class="container is-fluid">
-
+    <!-- START MAIN CONTAINER -->
+    <div class="container is-fullhd">
+        <div class="columns">
+            <div class="column has-text-centered is-12">
+                <!--  <h1 class="title is-1">ABOUT ME</h1> -->
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <figure class="image is-2by1">
+                    <img src="img/profile.jpg">
+                </figure>
+            </div>
+            <div class="column" id="aboutme">
+                <div class="content has-text-centered has-text-left-tablet">
+                    <h1 class="title">ABOUT ME</h1>
+                    <p>
+                        <strong>NAME : </strong> Thapakorn Tuwaemuesa</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- SCROLL TO TOP BUTTON -->
+    <div class='scrolltop'>
+        <div class='scroll icon'>
+            <i class="fa fa-4x fa-angle-up"></i>
+        </div>
+    </div>
+    <!-- END TO TOP -->
+    <!-- END MAIN CONTAINER -->
     <!-- START FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <strong>THAPAKORN604.GITHUB.IO </strong> <br />
-                    &copy; 2017 by <strong>Thapakorn Tuwaemuesa</strong> <br />
-                    Responsive and Beautiful by <a href="https://bulma.io"><strong>Bulma</strong></a>         
+                    <strong>THAPAKORN604.GITHUB.IO </strong>
+                    <br /> &copy; 2017 by
+                    <strong>Thapakorn Tuwaemuesa</strong>
+                    <br /> Responsive and Beautiful by
+                    <a href="https://bulma.io">
+                        <strong>Bulma</strong>
+                    </a>
                 </p>
             </div>
         </div>
