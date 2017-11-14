@@ -73,7 +73,7 @@
         opacity: 3.0;
     }
 
-    #header {
+    #header,#education {
         font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     }
 
@@ -130,6 +130,10 @@
     #is-colour{
         background-color: darkgray;
     }
+    
+    #is-black {
+        color: #1f0202;
+    }
 </style>
 
 <body>
@@ -157,7 +161,7 @@
                                 </span>
                                 About me
                             </a>
-                            <a class="navbar-item scrollTo" href="#menu">
+                            <a class="navbar-item scrollTo" href="#education">
                                 <span class="icon">
                                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                 </span>
@@ -214,18 +218,17 @@
         </div>
     </section>
     <!-- END NAV BAR -->
-    <!-- START MAIN CONTAINER -->
     <!-- ABOUT ME -->
     <section class="section" id="aboutme">
         <div class="container is-fullhd">
-            <div class="columns is-desktop is-vcentered">
+            <div class="columns is-vcentered">
                 <div class="column">
-                    <figure class="image is-2-by-1">
+                    <figure class="image square">
                         <img src="img/profile.jpg">
                     </figure>
                 </div>
                     <div class="column">
-                        <div class="content has-text-centered has-text-left-desktop">
+                        <div class="content has-text-centered has-text-left-tablet">
                             <h3 class="title has-text-weight-bold">THAPAKORN TUWAEMUESA</h3>
                             <h5 class="subtitle has-text-weight-light">Software engineering student</h5>
                             <p class="is-size-5-touch">
@@ -239,18 +242,18 @@
                                 <br/>99/1-2 M.14 T.Suthep A.Mueang, <br/>Chiangmai, Thailand 50200</p>
                                 <p>
                                     <a href="https://www.facebook.com/thapakorno">
-                                        <span class="icon">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="icon is-medium">
+                                            <i class="fa fa-2x fa-facebook" id="is-black" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                     <a href="https://twitter.com/ttoat604">
-                                        <span class="icon">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="icon is-medium">
+                                            <i class="fa fa-2x fa-twitter" id="is-black" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                     <a href="https://github.com/thapakorn604">
-                                        <span class="icon">
-                                            <i class="fa fa-github" aria-hidden="true"></i>
+                                        <span class="icon is-medium">
+                                            <i class="fa fa-2x fa-github" id="is-black" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                 </p>
@@ -267,7 +270,51 @@
         </div>
     </div>
     <!-- END TO TOP -->
-    <!-- END MAIN CONTAINER -->
+    <!-- EDUCATION -->
+    <hr>
+    <h1 class="title is-1 has-text-centered" id="education">Education</h1>
+    <hr>
+    <div class="container is-fullhd">
+        <div class="content has-text-centered">
+                <div class="timeline is-centered">
+                        <header class="timeline-header">
+                          <span class="tag is-medium is-primary">Start</span>
+                        </header>
+                        <div class="timeline-item is-primary">
+                          <div class="timeline-marker is-primary"></div>
+                          <div class="timeline-content">
+                            <p class="heading">January 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                          </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                          <div class="timeline-marker is-warning is-image is-32x32">
+                            <img src="http://bulma.io/images/placeholders/32x32.png">
+                          </div>
+                          <div class="timeline-content">
+                            <p class="heading">February 2016</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                          </div>
+                        </div>
+                        <header class="timeline-header">
+                          <span class="tag is-primary">2017</span>
+                        </header>
+                        <div class="timeline-item is-danger">
+                          <div class="timeline-marker is-danger is-icon">
+                            <i class="fa fa-flag"></i>
+                          </div>
+                          <div class="timeline-content">
+                            <p class="heading">March 2017</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                          </div>
+                        </div>
+                        <header class="timeline-header">
+                          <span class="tag is-medium is-primary">End</span>
+                        </header>
+                      </div>
+        </div>
+    </div>
+    <!-- END -->
     <!-- START FOOTER -->
     <footer class="footer">
         <div class="container">

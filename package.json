@@ -1,0 +1,24 @@
+{
+  "name": "thapakorn604.github.io",
+  "version": "1.0.0",
+  "description": "a web-based portfolio for thapakorn604",
+  "main": "index.html",
+  "dependencies": {
+    "bulma-timeline": "^1.1.0",
+    "bulma":"^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thapakorn604/thapakorn604.github.io.git"
+  },
+  "author": "thapakorn604",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thapakorn604/thapakorn604.github.io/issues"
+  },
+  "homepage": "https://github.com/thapakorn604/thapakorn604.github.io#readme"
+}
