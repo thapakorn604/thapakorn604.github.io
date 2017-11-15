@@ -14,6 +14,14 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
 </head>
 <script>
+    $(window).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 600) {
+        $("#timeline-responsive").removeClass("is-centered");
+    }else{
+        $("#timeline-responsive").addClass("is-centered");
+    }
+});
     function showMenu() {
         $('#menu').toggleClass('is-active');
         $('#nav-collapse').toggleClass('is-active');
@@ -72,7 +80,7 @@
         opacity: 1.0;
     }
 
-    #header,#education {
+    #header {
         font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     }
 
@@ -126,10 +134,11 @@
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
     }
-    #is-colour{
+
+    #is-colour {
         background-color: darkgray;
     }
-    
+
     #is-black {
         color: #1f0202;
     }
@@ -226,40 +235,41 @@
                         <img src="img/profile.jpg">
                     </figure>
                 </div>
-                    <div class="column">
-                        <div class="content has-text-centered has-text-left-tablet">
-                            <h3 class="title has-text-weight-bold">THAPAKORN TUWAEMUESA</h3>
-                            <h5 class="subtitle has-text-weight-light">Software engineering student</h5>
-                            <p class="is-size-5-touch">
-                                <strong>Email:</strong>
-                                <br/>thapakorn604@gmail.com</p>
-                            <p class="is-size-5-touch">
-                                <strong>Tel:</strong>
-                                <br/>+66 88-562-8077</p>
-                            <p class="is-size-5-touch">
-                                <strong>Address:</strong>
-                                <br/>99/1-2 M.14 T.Suthep A.Mueang, <br/>Chiangmai, Thailand 50200</p>
-                                <p>
-                                    <a href="https://www.facebook.com/thapakorno" target="_blank">
-                                        <span class="icon is-medium">
-                                            <i class="fa fa-2x fa-facebook" id="is-black" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                    <a href="https://twitter.com/ttoat604" target="_blank">
-                                        <span class="icon is-medium">
-                                            <i class="fa fa-2x fa-twitter" id="is-black" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                    <a href="https://github.com/thapakorn604" target="_blank">
-                                        <span class="icon is-medium">
-                                            <i class="fa fa-2x fa-github" id="is-black" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                </p>
-                        </div>
+                <div class="column">
+                    <div class="content has-text-centered has-text-left-tablet">
+                        <h3 class="title has-text-weight-bold">THAPAKORN TUWAEMUESA</h3>
+                        <h5 class="subtitle has-text-weight-light">Software engineering student</h5>
+                        <p class="is-size-5-touch">
+                            <strong>Email:</strong>
+                            <br/>thapakorn604@gmail.com</p>
+                        <p class="is-size-5-touch">
+                            <strong>Tel:</strong>
+                            <br/>+66 88-562-8077</p>
+                        <p class="is-size-5-touch">
+                            <strong>Address:</strong>
+                            <br/>99/1-2 M.14 T.Suthep A.Mueang,
+                            <br/>Chiangmai, Thailand 50200</p>
+                        <p>
+                            <a href="https://www.facebook.com/thapakorno" target="_blank">
+                                <span class="icon is-medium">
+                                    <i class="fa fa-2x fa-facebook" id="is-black" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/ttoat604" target="_blank">
+                                <span class="icon is-medium">
+                                    <i class="fa fa-2x fa-twitter" id="is-black" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a href="https://github.com/thapakorn604" target="_blank">
+                                <span class="icon is-medium">
+                                    <i class="fa fa-2x fa-github" id="is-black" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- END ABOUT ME -->
     <!-- SCROLL TO TOP BUTTON -->
@@ -274,10 +284,31 @@
         <hr>
         <h1 class="title is-1 has-text-centered" id="header">Education</h1>
         <hr>
+        <div class="timeline is-centered" id="timeline-responsive">   
+            <div class="timeline-item">
+                <div class="timeline-marker is-dark is-image is128x128"></div>
+                <div class="timeline-content">
+                    <p class="heading is-size-6"><strong>2015 - Present</strong></p>
+                    <p class="heading">Bachelor's degree, chiangmai university</p>
+                    <p>Studying software engineering program at College of Art, Media and Technology, 
+                        a part of Chiangmai university, Chaingmai, Thailand</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                    <div class="timeline-marker is-dark is-image is128x128"></div>
+                    <div class="timeline-content">
+                        <p class="heading is-size-6"><strong>2009 - 2012</strong></p>
+                        <p class="heading">High school diploma, Rattanakosinsomphot bowonniwet salaya school</p>
+                        <p>Studied Art and Language program at Rattanakosinsombhot bowonniwet salaya school,
+                            Nakhon pathom, Thailand
+                        </p>
+                    </div>
+                </div>
+        </div>
     </section>
-    
-    
-    
+
+
+
     <!-- END -->
     <!-- START FOOTER -->
     <footer class="footer">
