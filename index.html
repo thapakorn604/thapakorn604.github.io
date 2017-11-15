@@ -21,14 +21,14 @@
             $("#timeline-responsive").removeClass("is-centered");
         }
         $(".se-pre-con").delay(2500).fadeOut("slow");
-   });
-   /* end */
-   /* responsive timeline */
-    $(window).on('resize',function () {
+    });
+    /* end */
+    /* responsive timeline */
+    $(window).on('resize', function () {
         var viewportWidth = $(window).width();
         if (viewportWidth < 600) {
             $("#timeline-responsive").removeClass("is-centered");
-        }else{
+        } else {
             $("#timeline-responsive").addClass("is-centered");
         }
     });
@@ -81,19 +81,6 @@
     /* END GO TOP BUTTON */
 </script>
 <style>
-    #splash {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        right: 0px;
-        background: #07024d;
-    }
-
-    .img-circle {
-        border-radius: 50%;
-    }
-
     .has-bg-img {
         background: url('img/header.jpg')center center;
         background-size: cover;
@@ -155,28 +142,57 @@
         -o-transition: 0.5s;
     }
 
-    #is-colour {
-        background-color: darkgray;
+    #is-dark {
+        background-color: rgb(59, 58, 58);
+        color: white;
     }
 
     #is-black {
         color: #1f0202;
     }
-    .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(img/loading.gif) center no-repeat #fff;
-}
+
+    #is-white {
+        color: whitesmoke;
+    }
+
+    .has-black-bg {
+        background-color: black;
+    }
+
+    .has-grey-bg {
+        background-image: -webkit-linear-gradient(top, rgb(46, 45, 45), rgb(100, 100, 100));
+        background-image: -moz-linear-gradient(top, rgb(46, 45, 45), rgb(100, 100, 100));
+        background-image: linear-gradient(to bottom, rgb(46, 45, 45), rgb(100, 100, 100));
+    }
+
+    .half-line {
+        height: 3px;
+    }
+
+    .no-js #loader {
+        display: none;
+    }
+
+    .js #loader {
+        display: block;
+        position: absolute;
+        left: 100px;
+        top: 0;
+    }
+
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(img/loading.gif) center no-repeat #fff;
+    }
 </style>
 
 <body>
-        <div class="se-pre-con"></div>
+    <div class="se-pre-con"></div>
     <!-- START NAV BAR -->
     <section class="hero is-fullheight is-dark has-bg-img">
         <div class="hero-head">
@@ -207,11 +223,11 @@
                                 </span>
                                 Education
                             </a>
-                            <a class="navbar-item scrollTo" href="#menu">
+                            <a class="navbar-item scrollTo" href="#skills">
                                 <span class="icon">
                                     <i class="fa fa-code-fork" aria-hidden="true"></i>
                                 </span>
-                                Work
+                                Skills
                             </a>
 
                             <a class="navbar-item scrollTo" href="#menu">
@@ -263,7 +279,7 @@
         <div class="container is-fullhd">
             <div class="columns is-vcentered">
                 <div class="column">
-                    <figure class="image square">
+                    <figure class="image is-square">
                         <img src="img/profile.jpg">
                     </figure>
                 </div>
@@ -341,18 +357,81 @@
             </div>
         </div>
     </section>
-
-
-
     <!-- END -->
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container is-fullhd">
+            <div class="columns has-black-bg">
+                <div class="column">
+                    <h1 class="title is-1 has-text-centered has-text-white" id="header">Skills</h1>
+                </div>
+            </div>
+            <div class="half-line"></div>
+            <div class="columns has-grey-bg">
+                <div class="column is-one-third">
+                    <h1 class="subtitle has-text-white">
+                        <strong id="is-white">PROGRAMMING LANG</strong>
+                    </h1>
+                    <p class="has-text-white">JAVA</p>
+                    <progress class="progress is-danger" value="65" max="100"></progress>
+                    <p class="has-text-white">C#</p>
+                    <progress class="progress is-danger" value="50" max="100"></progress>
+                    <p class="has-text-white">Python</p>
+                    <progress class="progress is-danger" value="40" max="100"></progress>
+                    <p class="has-text-white">HTML &amp; CSS</p>
+                    <progress class="progress is-danger" value="60" max="100"></progress>
+                    <p class="has-text-white">JavaScript</p>
+                    <progress class="progress is-danger" value="50" max="100"></progress>
+                    <p class="has-text-white">PHP</p>
+                    <progress class="progress is-danger" value="55" max="100"></progress>
+                </div>
+                <div class="column is-one-third">
+                    <h1 class="subtitle has-text-white">
+                        <strong id="is-white">FRAMEWORK</strong>
+                    </h1>
+                    <br/>
+                    <p class="has-text-white">jQuery</p>
+                    <progress class="progress is-danger" value="55" max="100"></progress>
+                    <p class="has-text-white">Spring MVC</p>
+                    <progress class="progress is-danger" value="40" max="100"></progress>
+                    <p class="has-text-white">ASP.NET</p>
+                    <progress class="progress is-danger" value="50" max="100"></progress>
+                    <p class="has-text-white">Bootstrap</p>
+                    <progress class="progress is-danger" value="55" max="100"></progress>
+                    <p class="has-text-white">Bulma</p>
+                    <progress class="progress is-danger" value="60" max="100"></progress>
+                    <p class="has-text-white">Laravel</p>
+                    <progress class="progress is-danger" value="45" max="100"></progress>
+                </div>
+                <div class="column is-one-third">
+                    <h1 class="subtitle has-text-white">
+                        <strong id="is-white">BY SIDE</strong>
+                    </h1>
+                    <p class="has-text-white">Front-end</p>
+                    <progress class="progress is-danger" value="40" max="100"></progress>
+                    <p class="has-text-white">Back-end</p>
+                    <progress class="progress is-danger" value="65" max="100"></progress>
+                    <h1 class="subtitle has-text-white">
+                            <strong id="is-white">BY TYPE</strong>
+                        </h1>
+                    <p class="has-text-white">Web</p>
+                    <progress class="progress is-danger" value="60" max="100"></progress>
+                    <p class="has-text-white">Mobile</p>
+                    <progress class="progress is-danger" value="50" max="100"></progress>
+                    <p class="has-text-white">Desktop</p>
+                    <progress class="progress is-danger" value="55" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- START FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="is-dark">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <strong>THAPAKORN604.GITHUB.IO </strong>
+                    <strong id="is-white">THAPAKORN604.GITHUB.IO </strong>
                     <br /> &copy; 2017 by
-                    <strong>Thapakorn Tuwaemuesa</strong>
+                    <strong id="is-white">Thapakorn Tuwaemuesa</strong>
                 </p>
                 <a href="https://bulma.io">
                     <img src="img/bulma.png" width="128" height="24">
