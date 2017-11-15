@@ -69,7 +69,6 @@
     /* START GO TOP BUTTON,COLLAPSE EXPANDED NAV WHEN SCROLLING */
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
-            $('.scrolltop:hidden').stop(true, true).fadeIn();
             $(".navbar").css('background-color', '#1a1a1a');
             $('#menu').removeClass('is-active');
             $('#nav-collapse').removeClass('is-active');
@@ -78,12 +77,6 @@
             $('.navbar').css('background-color', 'transparent');
         }
     });
-    $(function () {
-        $(".scroll").click(function () {
-            $("html,body").animate({ scrollTop: $("#aboutme").offset().top }, "500");
-            return false
-        })
-    })
     /* END GO TOP BUTTON */
 </script>
 <style>
@@ -99,53 +92,6 @@
 
     a:hover {
         color: #ff3300;
-    }
-
-    .scrolltop {
-        display: none;
-        width: 100%;
-        margin: 0 auto;
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
-    }
-
-    .scroll {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        background: #b2b2b2;
-        background: rgba(178, 178, 178, 0.7);
-        padding: 20px;
-        text-align: center;
-        margin: 0 0 0 0;
-        cursor: pointer;
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-    }
-
-    .scroll:hover {
-        background: rgba(178, 178, 178, 1.0);
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-    }
-
-    .scroll:hover .fa {
-        padding-top: -10px;
-    }
-
-    .scroll .fa {
-        font-size: 30px;
-        margin-top: -5px;
-        margin-left: 1px;
-        transition: 0.5s;
-        -moz-transition: 0.5s;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
     }
 
     #is-dark {
@@ -198,6 +144,7 @@
 </style>
 
 <body>
+    <!-- SCROLL TO TOP BUTTON -->
     <div class="se-pre-con"></div>
     <!-- START NAV BAR -->
     <section class="hero is-fullheight is-dark has-bg-img">
@@ -327,12 +274,6 @@
         </div>
     </section>
     <!-- END ABOUT ME -->
-    <!-- SCROLL TO TOP BUTTON -->
-    <div class='scrolltop'>
-        <div class='scroll icon'>
-            <i class="fa fa-4x fa-angle-up"></i>
-        </div>
-    </div>
     <!-- END TO TOP -->
     <!-- EDUCATION -->
     <section class="section" id="education">
