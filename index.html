@@ -9,12 +9,9 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css.map">
     <link rel="stylesheet" type="text/css" href="node_modules/bulma-timeline/bulma-timeline.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="scripts/jquery-ui.css">
-    <script src="scripts/jquery-3.2.1.js"></script>
-    <script src="scripts/jquery-ui.js"></script>
-    <script src="scripts/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
 </head>
 <script>
     function showMenu() {
@@ -72,7 +69,7 @@
     .has-bg-img {
         background: url('img/header.jpg')center center;
         background-size: cover;
-        opacity: 3.0;
+        opacity: 1.0;
     }
 
     #header,#education {
@@ -142,10 +139,10 @@
     <!-- START NAV BAR -->
     <section class="hero is-fullheight is-dark has-bg-img">
         <div class="hero-head">
-            <nav class="navbar is-fixed-top is-primary">
+            <nav class="navbar is-fixed-top is-dark">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item has-text-weight-bold" href="#">
+                        <a class="navbar-item has-text-weight-bold" href="https://thapakorn604.github.io">
                             THAPAKORN604
                         </a>
                         <div class="navbar-burger burger" id="nav-collapse" data-target="menu" onclick="showMenu()">
@@ -243,17 +240,17 @@
                                 <strong>Address:</strong>
                                 <br/>99/1-2 M.14 T.Suthep A.Mueang, <br/>Chiangmai, Thailand 50200</p>
                                 <p>
-                                    <a href="https://www.facebook.com/thapakorno">
+                                    <a href="https://www.facebook.com/thapakorno" target="_blank">
                                         <span class="icon is-medium">
                                             <i class="fa fa-2x fa-facebook" id="is-black" aria-hidden="true"></i>
                                         </span>
                                     </a>
-                                    <a href="https://twitter.com/ttoat604">
+                                    <a href="https://twitter.com/ttoat604" target="_blank">
                                         <span class="icon is-medium">
                                             <i class="fa fa-2x fa-twitter" id="is-black" aria-hidden="true"></i>
                                         </span>
                                     </a>
-                                    <a href="https://github.com/thapakorn604">
+                                    <a href="https://github.com/thapakorn604" target="_blank">
                                         <span class="icon is-medium">
                                             <i class="fa fa-2x fa-github" id="is-black" aria-hidden="true"></i>
                                         </span>
@@ -273,46 +270,14 @@
     </div>
     <!-- END TO TOP -->
     <!-- EDUCATION -->
-    <hr>
-    <h1 class="title is-1 has-text-centered" id="education">Education</h1>
-    <hr>
-    <div class="timeline is-centered">
-            <header class="timeline-header">
-              <span class="tag is-medium is-primary">Start</span>
-            </header>
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <p class="heading">January 2016</p>
-                <p>Timeline content - Can include any HTML element</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-marker is-image is-32x32">
-                <img src="http://bulma.io/images/placeholders/32x32.png">
-              </div>
-              <div class="timeline-content">
-                <p class="heading">February 2016</p>
-                <p>Timeline content - Can include any HTML element</p>
-              </div>
-            </div>
-            <header class="timeline-header">
-              <span class="tag is-primary">2017</span>
-            </header>
-            <div class="timeline-item">
-              <div class="timeline-marker is-icon">
-                <i class="fa fa-flag"></i>
-              </div>
-              <div class="timeline-content">
-                <p class="heading">March 2017</p>
-                <p>Timeline content - Can include any HTML element</p>
-              </div>
-            </div>
-            <div class="timeline-header">
-              <span class="tag is-medium is-primary">End</span>
-            </div>
-          </div>
-          <hr>
+    <section class="section" id="education">
+        <hr>
+        <h1 class="title is-1 has-text-centered" id="header">Education</h1>
+        <hr>
+    </section>
+    
+    
+    
     <!-- END -->
     <!-- START FOOTER -->
     <footer class="footer">
