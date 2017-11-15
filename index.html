@@ -16,11 +16,11 @@
 <script>
     /* Loading screen */
     $(window).on('load', function () {
-        $(".se-pre-con").fadeOut("slow");
         var viewportWidth = $(window).width();
         if (viewportWidth < 600) {
             $("#timeline-responsive").removeClass("is-centered");
         }
+        $(".se-pre-con").delay(2500).fadeOut("slow");
    });
    /* end */
    /* responsive timeline */
