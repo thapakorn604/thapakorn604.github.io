@@ -39,7 +39,7 @@
         $('#nav-collapse').toggleClass('is-active');
     }
     /* START SCROLL TO SECTION */
-    $('.scrollTo').click(function () {
+    $(document).on('click', '.navbar-item', function (e) {
         var getElem = $(this).attr('href');
         var targetDistance = 20;
         if ($(getElem).length) {
@@ -152,7 +152,7 @@
             <nav class="navbar is-fixed-top is-dark">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item has-text-weight-bold" href="https://thapakorn604.github.io">
+                        <a class="navbar-item has-text-weight-bold" href="#hero">
                             THAPAKORN604
                         </a>
                         <div class="navbar-burger burger" id="nav-collapse" data-target="menu" onclick="showMenu()">
@@ -208,7 +208,7 @@
                 </div>
             </nav>
         </div>
-        <div class="hero-body">
+        <div class="hero-body" id="hero">
             <div class="container">
                 <h1 class="title has-text-centered is-size-1-desktop" id="header">
                     <span class="icon">
@@ -382,7 +382,7 @@
                     <br /> &copy; 2017 by
                     <strong id="is-white">Thapakorn Tuwaemuesa</strong>
                 </p>
-                <a href="https://bulma.io">
+                <a href="https://bulma.io" target="_blank">
                     <img src="img/bulma.png" width="128" height="24">
                 </a>
             </div>
