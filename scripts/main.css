@@ -1,0 +1,86 @@
+.is-circle {
+    border-radius: 50%;
+}
+
+.has-bg-img {
+    background: url('../img/header.jpg')center center;
+    background-size: cover;
+    opacity: 1.0;
+}
+
+#header {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+a:hover {
+    color: #ff3300;
+}
+
+#is-dark {
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+#is-black {
+    color: #1f0202;
+}
+
+#is-white {
+    color: whitesmoke;
+}
+
+.has-black-bg {
+    background-color: black;
+}
+
+.has-grey-bg {
+    background-image: -webkit-linear-gradient(top, rgb(46, 45, 45), rgb(100, 100, 100));
+    background-image: -moz-linear-gradient(top, rgb(46, 45, 45), rgb(100, 100, 100));
+    background-image: linear-gradient(to bottom, rgb(46, 45, 45), rgb(100, 100, 100));
+}
+
+.half-line {
+    height: 3px;
+}
+
+.third-four-line {
+    height: 4px;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/loading.gif) center no-repeat #fff;
+}
+
+.timeline-item.timeline-hide {
+    display: none;
+}
+
+span.tag.is-hide {
+    display: none;
+}
+
+.modal-trigger {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-trigger:hover {
+    opacity: 0.7;
+}
