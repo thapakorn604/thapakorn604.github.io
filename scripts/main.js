@@ -10,6 +10,7 @@
             $('#moreless span i').removeClass('fa fa-angle-up');
             $('#moreless span i').addClass('fa fa-angle-down');
             $('#moreless span i').text(' MORE..');
+            doScroll('#experiences');
         }
     }
     /* end */
