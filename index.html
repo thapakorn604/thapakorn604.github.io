@@ -16,17 +16,18 @@
 </head>
 <script>
     /* Toggle show/hide */
-    function ShowAndHide(){
+    function ShowAndHide() {
         $('.timeline-item.timeline-hide').fadeToggle('timeline-hide');
-        if($('#moreless span i').attr('class').includes('fa fa-angle-down')){
+        $('.timeline-header.timeline-hide span.tag').fadeToggle();
+        if ($('#moreless span i').attr('class').includes('fa fa-angle-down')) {
             $('#moreless span i').removeClass('fa fa-angle-down');
-            $('#moreless span i').addClass('fa fa-angle-up'); 
+            $('#moreless span i').addClass('fa fa-angle-up');
             $('#moreless span i').text(' LESS..');
-        }else{
+        } else {
             $('#moreless span i').removeClass('fa fa-angle-up');
             $('#moreless span i').addClass('fa fa-angle-down');
             $('#moreless span i').text(' MORE..');
-        } 
+        }
     }
     /* end */
     /* Loading screen */
@@ -97,9 +98,10 @@
     /* END GO TOP BUTTON */
 </script>
 <style>
-    .is-circle{
+    .is-circle {
         border-radius: 50%;
     }
+
     .has-bg-img {
         background: url('img/header.jpg')center center;
         background-size: cover;
@@ -139,6 +141,8 @@
 
     .half-line {
         height: 3px;
+    }.third-four-line {
+        height: 4px;
     }
 
     .no-js #loader {
@@ -161,7 +165,12 @@
         z-index: 9999;
         background: url(img/loading.gif) center no-repeat #fff;
     }
+
     .timeline-item.timeline-hide {
+        display: none;
+    }
+
+    span.tag.is-hide {
         display: none;
     }
 </style>
@@ -199,17 +208,17 @@
                                 </span>
                                 Education
                             </a>
-                            <a class="navbar-item scrollTo" href="#menu">
+                            <a class="navbar-item scrollTo" href="#experiences">
                                 <span class="icon">
                                     <i class="fa fa-line-chart" aria-hidden="true"></i>
                                 </span>
-                                Achievement
+                                Experiences
                             </a>
                             <a class="navbar-item scrollTo" href="#skills">
                                 <span class="icon">
-                                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                                    <i class="fa fa-archive" aria-hidden="true"></i>
                                 </span>
-                                Skills
+                                Portfolio
                             </a>
                         </div>
 
@@ -300,7 +309,7 @@
     <!-- EDUCATION -->
     <section class="section" id="education">
         <hr>
-        <h1 class="title is-1 has-text-centered" id="header">Experiences</h1>
+        <h1 class="title is-1 has-text-centered" id="header">Education</h1>
         <hr>
         <div class="timeline is-centered" id="timeline-edu">
             <div class="timeline-item">
@@ -347,42 +356,133 @@
                         <strong>
                             Geoinfomatics application contest 2018</strong>
                     </p>
-                    <p>Participated in G-CON 2018. Three projects passed quilification round.</p>
+                    <p>Participated in G-CON 2018, a GIS application contest with friends. Three projects passed quilification
+                        round.
+                    </p>
                 </div>
             </div>
             <div class="timeline-item">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <strong>
+                            Agile for software development workshop</strong>
+                    </p>
+                    <p>Participated in Agile for software development workshop at CAMT, Chiangmai, Thailand</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-black-tie" aria-hidden="true"></i>
+                        </span>
+                        <strong>
+                            Teacher assistant</strong>
+                    </p>
+                    <p>Techer assistant of Object-Oriented Programming 1/2017 at GIS department,Chiangmai University, 1/2017
+                        semester.
+                    </p>
+                </div>
+            </div>
+            <header class="timeline-header timeline-hide">
+                <span class="tag is-hide is-medium is-dark"><div class="third-four-line"></div>2016</span>
+            </header>
+            <div class="timeline-item timeline-hide">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <strong>acm-icpc thailand 2016, Northern region
+                        </strong>
+                    </p>
+                    <p>Participated in ACM-ICPC Thailand 2016, Northern region,a team-based programming competition with friends
+                        at Chaingmai University, Chiangmai, Thailand.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item timeline-hide">
                     <div class="timeline-marker is-dark"></div>
                     <div class="timeline-content">
                         <p class="heading">
                             <span>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
-                            <strong>
-                                Agile for software development</strong>
+                            <strong>server-side using php workshop
+                            </strong>
                         </p>
-                        <p>Participated in Agile for software development at CAMT, Chiangmai, Thailand</p>
+                        <p>Participated in PHP for back-end web developer at CAMT, Chiangmai, Thailand.
+                        </p>
                     </div>
+                </div>     
+            <header class="timeline-header timeline-hide">
+                <span class="tag is-hide is-medium is-dark"><div class="third-four-line"></div>2011</span>
+            </header>
+            <div class="timeline-item timeline-hide">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </span>
+                        <strong>19th Thai yorth-poet
+                        </strong>
+                    </p>
+                    <p>Participated in Thai yourth-poet, a training camp for improving poem skills and won 1st place in Suphanburi
+                        depart poem competition, a part of this program.
+                    </p>
                 </div>
-                <div class="timeline-item">
-                        <div class="timeline-marker is-dark"></div>
-                        <div class="timeline-content">
-                            <p class="heading">
-                                <span>
-                                        <i class="fa fa-black-tie" aria-hidden="true"></i>
-                                </span>
-                                <strong>
-                                    Teacher assistant</strong>
-                            </p>
-                            <p>Techer assistant of Object-Oriented Programming 1/2017 at GIS department, 1/2017 semester</p>
-                        </div>
-                    </div>
+            </div>
+            <header class="timeline-header timeline-hide">
+                <span class="tag is-hide is-medium is-dark"><div class="third-four-line"></div>2010</span>
+            </header>
+            <div class="timeline-item timeline-hide">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <strong>Flash game development with Actionscript workshop
+                        </strong>
+                    </p>
+                    <p>Participated in Flash game development workshop based on ActionScript at University of the Thai Chamber
+                        of Commerce, Bangkok, Thailand.
+                    </p>
+                </div>
+            </div>
+            <header class="timeline-header timeline-hide">
+                <span class="tag is-hide is-medium is-dark"><div class="third-four-line"></div>2009</span>
+            </header>
+            <div class="timeline-item timeline-hide">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </span>
+                        <strong>Bowonniwet bonds
+                        </strong>
+                    </p>
+                    <p>Won 1st place in Thai poem competition of Bowonniwet bonds, a competition for 4 related school.
+                    </p>
+                </div>
+            </div>
         </div>
         <br/>
         <p class="has-text-centered">
-                <button class="button" id="moreless" onclick="ShowAndHide()"><span>
-                        <i class="fa fa-angle-down" aria-hidden="true"> MORE..</i></span></button>
-        <p>
-        
+            <button class="button" id="moreless" onclick="ShowAndHide()">
+                <span>
+                    <i class="fa fa-angle-down" aria-hidden="true"> MORE..</i>
+                </span>
+            </button>
+            <p>
     </section>
     <!-- Skills -->
     <section class="section" id="skills">
