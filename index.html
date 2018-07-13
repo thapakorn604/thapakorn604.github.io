@@ -191,24 +191,40 @@
         <h1 class="title is-1 has-text-centered" id="header">Experiences</h1>
         <hr>
         <div class="timeline is-centered" id="timeline-exp">
+                <header class="timeline-header">
+                        <span class="tag is-medium is-dark">2018</span>
+                </header>
+                <div class="timeline-item">
+                        <div class="timeline-marker is-dark"></div>
+                        <div class="timeline-content">
+                            <p class="heading">
+                                <span>
+                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                </span>
+                                <strong>
+                                    Geoinfomatics application contest 2018</strong>
+                            </p>
+                            <p>Won the 2nd prize at Startup Thailand 2018 in part of G-CON 2018, a GIS application contest.
+                            </p>
+                        </div>
+                    </div>
+                <div class="timeline-item">
+                        <div class="timeline-marker is-dark"></div>
+                        <div class="timeline-content">
+                            <p class="heading">
+                                <span>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <strong>
+                                    Blockchain workshop with Javascript</strong>
+                            </p>
+                            <p>Participated in Blockchain workshop, know the theory of blockchain and basic implementation.
+                            </p>
+                        </div>
+                    </div>
             <header class="timeline-header">
                 <span class="tag is-medium is-dark">2017</span>
             </header>
-            <div class="timeline-item">
-                <div class="timeline-marker is-dark"></div>
-                <div class="timeline-content">
-                    <p class="heading">
-                        <span>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </span>
-                        <strong>
-                            Geoinfomatics application contest 2018</strong>
-                    </p>
-                    <p>Participated in G-CON 2018, a GIS application contest with friends. Three projects passed quilification
-                        round.
-                    </p>
-                </div>
-            </div>
             <div class="timeline-item">
                 <div class="timeline-marker is-dark"></div>
                 <div class="timeline-content">
@@ -360,9 +376,9 @@
                     <p class="has-text-white">HTML &amp; CSS</p>
                     <progress class="progress is-danger" value="60" max="100"></progress>
                     <p class="has-text-white">JavaScript</p>
-                    <progress class="progress is-danger" value="50" max="100"></progress>
-                    <p class="has-text-white">PHP</p>
                     <progress class="progress is-danger" value="55" max="100"></progress>
+                    <p class="has-text-white">PHP</p>
+                    <progress class="progress is-danger" value="50" max="100"></progress>
                 </div>
                 <div class="column is-one-third">
                     <h1 class="subtitle has-text-white">
@@ -371,16 +387,16 @@
                     <br/>
                     <p class="has-text-white">jQuery</p>
                     <progress class="progress is-warning" value="55" max="100"></progress>
-                    <p class="has-text-white">Spring MVC</p>
-                    <progress class="progress is-warning" value="40" max="100"></progress>
+                    <p class="has-text-white">ReactJS</p>
+                    <progress class="progress is-warning" value="55" max="100"></progress>
                     <p class="has-text-white">ASP.NET</p>
                     <progress class="progress is-warning" value="50" max="100"></progress>
                     <p class="has-text-white">Bootstrap</p>
                     <progress class="progress is-warning" value="55" max="100"></progress>
                     <p class="has-text-white">Bulma</p>
                     <progress class="progress is-warning" value="60" max="100"></progress>
-                    <p class="has-text-white">Laravel</p>
-                    <progress class="progress is-warning" value="45" max="100"></progress>
+                    <p class="has-text-white">VueJS</p>
+                    <progress class="progress is-warning" value="40" max="100"></progress>
                 </div>
                 <div class="column is-one-third">
                     <h1 class="subtitle has-text-white">
@@ -389,7 +405,7 @@
                     <p class="has-text-white">Front-end</p>
                     <progress class="progress is-danger" value="40" max="100"></progress>
                     <p class="has-text-white">Back-end</p>
-                    <progress class="progress is-danger" value="65" max="100"></progress>
+                    <progress class="progress is-danger" value="50" max="100"></progress>
                     <h1 class="subtitle has-text-white">
                         <strong id="is-white">BY TYPE</strong>
                     </h1>
@@ -398,7 +414,7 @@
                     <p class="has-text-white">Mobile</p>
                     <progress class="progress is-danger" value="50" max="100"></progress>
                     <p class="has-text-white">Desktop</p>
-                    <progress class="progress is-danger" value="55" max="100"></progress>
+                    <progress class="progress is-danger" value="30" max="100"></progress>
                 </div>
             </div>
         </div>
@@ -410,15 +426,15 @@
         <hr>
         <div class="container is-fullhd">
             <div class="columns">
-                <div class="column is-half is-offset-one-quarter">
+                <div class="column is-half">
                     <div class="box">
                         <figure class="image is-4-by-3">
-                            <img class="modal-trigger" src="img/help-temple.png" onclick="showModal()">
+                            <img class="modal-trigger" src="img/help-temple.png" onclick="showTempleModal()">
                             <figcaption class="has-text-centered">
                                 <strong>HELP-TEMPLE.ORG</strong>
                             </figcaption>
                         </figure>
-                        <div class="modal">
+                        <div class="modal" id="temple">
                             <div class="modal-background"></div>
                             <div class="modal-card">
                                 <header class="modal-card-head">
@@ -437,7 +453,7 @@
                                         <br/>
                                         <p><strong>Type : </strong>Web-based appliction</p>         
                                         <p><strong>Role : </strong>Back-end</p>
-                                        <p><strong>Collaborator(s) : </strong><a href="https://www.facebook.com/mpattrakorn" target="_blank">Pattrankorn Apipattanamontree - 4th year student</a></p>
+                                        <p><strong>Collaborator(s) : </strong><a href="https://www.facebook.com/mpattrakorn" target="_blank">Pattrankorn Apipattanamontree</a></p>
 
                                 </section>
                                 <footer class="modal-card-foot">
@@ -447,6 +463,47 @@
                         </div>
                     </div>
                 </div>
+                <div class="column is-half">
+                        <div class="box">
+                            <figure class="image is-4-by-3">
+                                <img class="modal-trigger" src="img/plantphet.png" onclick="showPlantphetModal()">
+                                <figcaption class="has-text-centered">
+                                    <strong>Plantphet</strong>
+                                </figcaption>
+                            </figure>
+                            <div class="modal" id="plantphet">
+                                <div class="modal-background"></div>
+                                <div class="modal-card">
+                                    <header class="modal-card-head">
+                                        <p class="modal-card-title has-text-centered">PLANTPHET</p>
+                                        <button class="delete" aria-label="close" onclick="exitModal()"></button>
+                                    </header>
+                                    <section class="modal-card-body">
+                                        <figure class="image is-4-by-3">
+                                            <img src="img/plantphet.png">
+                                        </figure>
+                                        <br/>
+                                        <p>
+                                            <strong>Description : </strong>The project for help Thai farmers to have informations to support their
+                                            own farming plan such as the currectly price, predicted price, and what can be plant in their area. This project
+                                            is GIS based and Mobile application. It won the prize at Startup Thailand 2018 as G-CON 2018.</p>
+                                            <br/>
+                                            <p><strong>Type : </strong>Mobile application</p>         
+                                            <p><strong>Role : </strong>Back-end, Business pitching</p>
+                                            <p><strong>Collaborator(s) : </strong>
+                                                <a href="https://www.facebook.com/ploydamrongsiri" target="_blank">Hathaichanok Dumrongsiri</a>, 
+                                                <a href="https://www.facebook.com/bobbyzdonut" target="_blank">Kitsada Tangpoonpolsawasdi</a>, 
+                                                <a href="https://www.facebook.com/toonthanarit" target="_blank">Thanarit Lopetcharat</a>
+                                                as Team Cosmo :)</p>
+    
+                                    </section>
+                                    <footer class="modal-card-foot">
+    
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>

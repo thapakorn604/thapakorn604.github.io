@@ -15,8 +15,11 @@ function ShowAndHide() {
 }
 /* end */
 /* Show modal */
-function showModal() {
-    $(".modal").addClass("is-active");
+function showTempleModal() {
+    $("#temple").addClass("is-active");
+}
+function showPlantphetModal() {
+    $("#plantphet").addClass("is-active");
 }
 function exitModal() {
     $(".modal").removeClass("is-active");
