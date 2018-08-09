@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <title>THAPAKORN604 : WELCOME TO MY SITE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css.map">
@@ -191,37 +197,37 @@
         <h1 class="title is-1 has-text-centered" id="header">Experiences</h1>
         <hr>
         <div class="timeline is-centered" id="timeline-exp">
-                <header class="timeline-header">
-                        <span class="tag is-medium is-dark">2018</span>
-                </header>
-                <div class="timeline-item">
-                        <div class="timeline-marker is-dark"></div>
-                        <div class="timeline-content">
-                            <p class="heading">
-                                <span>
-                                    <i class="fa fa-trophy" aria-hidden="true"></i>
-                                </span>
-                                <strong>
-                                    Geoinfomatics application contest 2018</strong>
-                            </p>
-                            <p>Won the 2nd prize at Startup Thailand 2018 in part of G-CON 2018, a GIS application contest.
-                            </p>
-                        </div>
-                    </div>
-                <div class="timeline-item">
-                        <div class="timeline-marker is-dark"></div>
-                        <div class="timeline-content">
-                            <p class="heading">
-                                <span>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </span>
-                                <strong>
-                                    Blockchain workshop with Javascript</strong>
-                            </p>
-                            <p>Participated in Blockchain workshop, know the theory of blockchain and basic implementation.
-                            </p>
-                        </div>
-                    </div>
+            <header class="timeline-header">
+                <span class="tag is-medium is-dark">2018</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </span>
+                        <strong>
+                            Geoinfomatics application contest 2018</strong>
+                    </p>
+                    <p>Won the 2nd prize at Startup Thailand 2018 in part of G-CON 2018, a GIS application contest.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker is-dark"></div>
+                <div class="timeline-content">
+                    <p class="heading">
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                        <strong>
+                            Blockchain workshop with Javascript</strong>
+                    </p>
+                    <p>Participated in Blockchain workshop, know the theory of blockchain and basic implementation.
+                    </p>
+                </div>
+            </div>
             <header class="timeline-header">
                 <span class="tag is-medium is-dark">2017</span>
             </header>
@@ -248,8 +254,7 @@
                         <strong>
                             Teacher assistant</strong>
                     </p>
-                    <p>Techer assistant of Object-Oriented Programming for GIS department,Chiangmai University, 1/2017
-                        semester.
+                    <p>Techer assistant of Object-Oriented Programming for GIS department,Chiangmai University, 1/2017 semester.
                     </p>
                 </div>
             </div>
@@ -450,10 +455,15 @@
                                         <strong>Description : </strong>The project for Thai-budists and foreigner-buddist who need
                                         to donate for Thai-temple. They can find temple based on stuffs they want to donate
                                         then, match the temple which are lacking of that stuffs for them.</p>
-                                        <br/>
-                                        <p><strong>Type : </strong>Web-based appliction</p>         
-                                        <p><strong>Role : </strong>Back-end</p>
-                                        <p><strong>Collaborator(s) : </strong><a href="https://www.facebook.com/mpattrakorn" target="_blank">Pattrankorn Apipattanamontree</a></p>
+                                    <br/>
+                                    <p>
+                                        <strong>Type : </strong>Web-based appliction</p>
+                                    <p>
+                                        <strong>Role : </strong>Back-end</p>
+                                    <p>
+                                        <strong>Collaborator(s) : </strong>
+                                        <a href="https://www.facebook.com/mpattrakorn" target="_blank">Pattrankorn Apipattanamontree</a>
+                                    </p>
 
                                 </section>
                                 <footer class="modal-card-foot">
@@ -464,46 +474,50 @@
                     </div>
                 </div>
                 <div class="column is-half">
-                        <div class="box">
-                            <figure class="image is-4-by-3">
-                                <img class="modal-trigger" src="img/plantphet.png" onclick="showPlantphetModal()">
-                                <figcaption class="has-text-centered">
-                                    <strong>Plantphet</strong>
-                                </figcaption>
-                            </figure>
-                            <div class="modal" id="plantphet">
-                                <div class="modal-background"></div>
-                                <div class="modal-card">
-                                    <header class="modal-card-head">
-                                        <p class="modal-card-title has-text-centered">PLANTPHET</p>
-                                        <button class="delete" aria-label="close" onclick="exitModal()"></button>
-                                    </header>
-                                    <section class="modal-card-body">
-                                        <figure class="image is-4-by-3">
-                                            <img src="img/plantphet.png">
-                                        </figure>
-                                        <br/>
-                                        <p>
-                                            <strong>Description : </strong>The project for help Thai farmers to have informations to support their
-                                            own farming plan such as the currectly price, predicted price, and what can be plant in their area. This project
-                                            is GIS based and Mobile application. It won the prize at Startup Thailand 2018 as G-CON 2018.</p>
-                                            <br/>
-                                            <p><strong>Type : </strong>Mobile application</p>         
-                                            <p><strong>Role : </strong>Back-end, Business pitching</p>
-                                            <p><strong>Collaborator(s) : </strong>
-                                                <a href="https://www.facebook.com/ploydamrongsiri" target="_blank">Hathaichanok Dumrongsiri</a>, 
-                                                <a href="https://www.facebook.com/bobbyzdonut" target="_blank">Kitsada Tangpoonpolsawasdi</a>, 
-                                                <a href="https://www.facebook.com/toonthanarit" target="_blank">Thanarit Lopetcharat</a>
-                                                as Team Cosmo :)</p>
-    
-                                    </section>
-                                    <footer class="modal-card-foot">
-    
-                                    </footer>
-                                </div>
+                    <div class="box">
+                        <figure class="image is-4-by-3">
+                            <img class="modal-trigger" src="img/plantphet.png" onclick="showPlantphetModal()">
+                            <figcaption class="has-text-centered">
+                                <strong>Plantphet</strong>
+                            </figcaption>
+                        </figure>
+                        <div class="modal" id="plantphet">
+                            <div class="modal-background"></div>
+                            <div class="modal-card">
+                                <header class="modal-card-head">
+                                    <p class="modal-card-title has-text-centered">PLANTPHET</p>
+                                    <button class="delete" aria-label="close" onclick="exitModal()"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                    <figure class="image is-4-by-3">
+                                        <img src="img/plantphet.png">
+                                    </figure>
+                                    <br/>
+                                    <p>
+                                        <strong>Description : </strong>The project for help Thai farmers to have informations to
+                                        support their own farming plan such as the currectly price, predicted price, and
+                                        what can be plant in their area. This project is GIS based and Mobile application.
+                                        It won the prize at Startup Thailand 2018 as G-CON 2018.</p>
+                                    <br/>
+                                    <p>
+                                        <strong>Type : </strong>Mobile application</p>
+                                    <p>
+                                        <strong>Role : </strong>Back-end, Business pitching</p>
+                                    <p>
+                                        <strong>Collaborator(s) : </strong>
+                                        <a href="https://www.facebook.com/ploydamrongsiri" target="_blank">Hathaichanok Dumrongsiri</a>,
+                                        <a href="https://www.facebook.com/bobbyzdonut" target="_blank">Kitsada Tangpoonpolsawasdi</a>,
+                                        <a href="https://www.facebook.com/toonthanarit" target="_blank">Thanarit Lopetcharat</a>
+                                        as Team Cosmo :)</p>
+
+                                </section>
+                                <footer class="modal-card-foot">
+
+                                </footer>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </section>
